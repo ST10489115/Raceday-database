@@ -98,12 +98,6 @@ Fields:
 * `RegistrationDate`
 * `RegistrationStatus`
 
-Possible registration statuses are:
-
-* `Pending`
-* `Confirmed`
-* `Cancelled`
-
 The database uses a CHECK constraint to ensure that only these statuses
 can be entered.
 6. RESULTS
