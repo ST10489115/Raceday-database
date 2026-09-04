@@ -1,7 +1,7 @@
  
 CREATE TABLE WEATHER (
     WeatherID       INT             IDENTITY(1,1) PRIMARY KEY,
-    EventID         INT             NOT NULL,
+    EventID         INT             NOT NULL FOREGIN KEY ,
     Temperature     DECIMAL(4,1)    NULL,
     Condition       NVARCHAR(50)    NULL,
     WindSpeed       DECIMAL(5,2)    NULL,
