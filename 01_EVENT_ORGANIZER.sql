@@ -5,7 +5,7 @@ GO
  
 CREATE TABLE EVENT_ORGANIZER (
     OrganizerID     INT             IDENTITY(1,1) PRIMARY KEY,
-    Name            NVARCHAR(100)   NOT NULL,
+    Name            NVARCHAR(100)   NOT NULL FOREGIN KEY,
     Email           NVARCHAR(100)   NOT NULL UNIQUE,
     Phone           NVARCHAR(20)    NULL
 );
