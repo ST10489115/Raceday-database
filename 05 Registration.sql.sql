@@ -4,7 +4,7 @@ CREATE TABLE PARTICIPANT (
     FirstName       NVARCHAR(50)    NOT NULL,
     LastName        NVARCHAR(50)    NOT NULL,
     Email           NVARCHAR(100)   NOT NULL UNIQUE,
-    Phone           NVARCHAR(20)    NULL
+    Phone           NVARCHAR(60)    NULL
 );
 GO
 
@@ -15,3 +15,7 @@ VALUES
 GO
 
 SELECT * FROM  PARTICIPANT
+
+UPDATE ParticipantID 
+SET email = 100 
+WHERE EmailID = 3
