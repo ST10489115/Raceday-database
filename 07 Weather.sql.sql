@@ -17,6 +17,7 @@ VALUES
 (1, 14.5, N'Partly Cloudy', 12.0, '2027-06-13'),
 (2, 19.0, N'Sunny', 22.5, '2027-03-08'),
 (3, 16.0, N'Clear', 8.0, '2026-11-01');
+(4,20.6, N'Overcoast, 10.0, '2026-06-21);
 GO
 
 SELECT * FROM WEATHER
