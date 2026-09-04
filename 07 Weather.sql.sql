@@ -20,3 +20,6 @@ VALUES
 GO
 
 SELECT * FROM WEATHER
+
+DROP FROM Weather 
+WHERE Temperature = 19.0 
