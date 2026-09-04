@@ -26,3 +26,10 @@ VALUES
 GO
 
 SELECT * FROM RESULTS;
+
+UPDATE Results 
+SET Position = 1240
+WHERE RegistrationID = 1
+
+UPDATE Results 
+SET Postion = 1240
