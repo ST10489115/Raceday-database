@@ -1,7 +1,7 @@
  
 CREATE TABLE ROUTE (
     RouteID         INT             IDENTITY(1,1) PRIMARY KEY,
-    EventID         INT             NOT NULL,
+    EventID         INT             NOT NULL FOREGIN KEY,
     Distance        DECIMAL(5,2)    NOT NULL,
     RouteName       NVARCHAR(100)   NOT NULL,
     RouteDescription NVARCHAR(MAX)  NULL,
