@@ -1,7 +1,7 @@
 
 CREATE TABLE EVENT (
     EventID         INT             IDENTITY(1,1) PRIMARY KEY,
-    OrganizerID     INT             NOT NULL,
+    OrganizerID     INT             NOT NULL FOREGIN KEY,
     EventName       NVARCHAR(100)   NOT NULL,
     EventDate       DATE            NOT NULL,
     Location        NVARCHAR(150)   NOT NULL,
@@ -20,3 +20,9 @@ VALUES
 GO
 
 SELECT * FROM EVENT
+    
+UPDATE  Location
+SET  Description = Cape Town City Centere
+WHERE OrganizerID = 2;
+
+
