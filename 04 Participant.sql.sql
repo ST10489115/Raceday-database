@@ -1,7 +1,7 @@
  
 CREATE TABLE PARTICIPANT (
     ParticipantID   INT             IDENTITY(1,1) PRIMARY KEY,
-    FirstName       NVARCHAR(50)    NOT NULL,
+    FirstName       NVARCHAR(50)    NOT NULL FOREGIN KEY ,
     LastName        NVARCHAR(50)    NOT NULL,
     Email           NVARCHAR(100)   NOT NULL UNIQUE,
     Phone           NVARCHAR(20)    NULL
